@@ -530,3 +530,274 @@
     }
 
 </style>
+
+<!-- swal2-modal-list + tooltip -->
+<style>
+    .tooltip {
+    & .arrow:before {
+          border-top-color: var(--secondary);
+      }
+    & .tooltip-inner {
+          background-color: var(--secondary);
+      }
+    }
+    .swal2-icommerce-modal-list > .swal2-modal {
+        padding: 0;
+        background: #f5f5f5;
+    & .swal2-header {
+          padding: 0;
+          background-color: #f5f5f5;
+          border-radius: 8px;
+    & .swal2-title {
+          border-bottom: 1px solid #969696;
+          padding: 15px 20px;
+          text-align: left;
+          background: #ebebeb;
+          font-size: 22px;
+          line-height: 22px;
+          border-radius: 8px 8px 0 0;
+          width: 100%;
+          margin-bottom: 0;
+      }
+    & .swal2-close {
+          width: 20px;
+          height: 20px;
+          font-size: 18px;
+          border: 1px solid #828282;
+          border-radius: 50%;
+          color: #828282;
+          top: 15px;
+          right: 15px;
+      }
+    }
+    & .swal2-content {
+          padding-top: 1.6rem;
+    & .swal2-input, & .swal2-select  {
+                          border: 1px solid #969696;
+                          border-radius: 5px;
+                          height: 2.5em;
+                          padding: 0 0.75em;
+                          width: 90%;
+                          background-color: #ffffff;
+                      }
+    & img {
+          width: 100px !important;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 5px;
+      }
+    }
+    & .swal2-actions {
+          margin-bottom: 20px;
+    & .swal2-confirm {
+          background-color: var(--primary);
+          font-size: 18px;
+          line-height: 18px;
+      }
+    & .swal2-cancel {
+          color: var(--primary);
+          background-color: transparent;
+          border: 1px solid var(--primary);
+          font-size: 18px;
+          line-height: 18px;
+    &:hover {
+         background-color: var(--primary);
+         border-color: var(--primary);
+         color: #fff;
+     }
+    }
+    }
+    }
+</style>
+
+<!-- list -->
+<style>
+#list_icommerce {
+    --border-r: .5rem;
+    --color1: #f5f5f5;
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+
+    & .w-140px { width: 140px; }
+    & .w-100px { width: 100px; }
+
+    & .list-link-return {
+      font-size: 16px;
+      margin: 5px 0;
+      display: inline-block;
+      color: var(--dark);
+    }
+
+    & .list-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+
+    & .list-card {
+      border-radius: var(--border-r);
+    }
+
+    & .list-card-header {
+      padding: 15px 25px;
+      border-radius: var(--border-r) var(--border-r) 0 0;
+      background-color: #ffffff;
+      border-bottom: 2px solid var(--color1);
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+    & .list-card-body {
+      padding: 30px 25px;
+      background-color: #ffffff;
+      border-radius: var(--border-r);
+
+        &.bottom {
+         border-radius: 0 0 var(--border-r) var(--border-r);
+        }
+
+        & .list-card-step {
+            display: grid;
+            margin: 0 25px;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            & .card-step {
+                border: 0;
+                border-radius: 20px;
+                padding: 30px;
+                text-align: center;
+                display: block;
+                & img {
+                    width: 300px !important;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+            @media (max-width: 991.98px) {
+                margin: 0;
+                grid-template-columns: 1fr;
+                & .card-step {
+                    padding: 15px;
+                    & img {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+    & .list-card-num-title {
+        display: grid;
+        font-size: 18px;
+        line-height: 20px;
+        gap: 10px;
+        grid-template-columns: auto 1fr;
+        margin-bottom: 20px;
+        min-height: 60px;
+        & .icon-num {
+          height: 42px;
+          width: 42px;
+          font-size: 22px;
+          font-weight: bold;
+          color: #fff;
+          background-color: var(--primary);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+
+    & .list-card-input-group {
+        & .input-group-prepend > .btn{
+          border-top-left-radius: 5rem;
+          border-bottom-left-radius: 5rem;
+        }
+        & .input-group-append > .btn {
+          border-top-right-radius: 5rem;
+          border-bottom-right-radius: 5rem;
+        }
+        & .form-control {
+          border: 1px solid var(--dark);
+        }
+    }
+
+    & .list-card-img {
+        display: flex;
+        align-items: center;
+        & img {
+          height: 122px;
+          width: 122px !important;
+          object-fit: cover;
+          border: 1px solid var(--dark);
+          border-radius: 20px;
+          padding: 2px;
+        }
+
+        @media (max-width: 767.98px) {
+            display: block;
+            & img {
+                height: 90px;
+                width: 90px !important;
+            }
+        }
+    }
+
+    & .list-card-price {
+        font-size: 20px;
+    }
+
+    & .table {
+        min-width: 550px;
+        & tbody tr:not(:last-child) th {
+            padding-bottom: 20px;
+        }
+        & th, &  td {
+            vertical-align: middle;
+        }
+    }
+    }
+
+    & .list-card-list {
+          border-radius: var(--border-r);
+          border: 1px solid #d2d2d2;
+          padding: 20px 25px;
+
+    &.list-light {
+         border-color: var(--primary);
+         background-color: #f0f0f0;
+         box-shadow: 1px 1px 10px #f0f0f0;
+     }
+
+    &:not(:last-child) {
+         margin-bottom: 30px;
+    }
+
+    & .list-card-title {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+    & .list-card-subtitle {
+          font-size: 16px;
+          line-height: 18px;
+    }
+
+    & .list-card-delete {
+          color: var(--primary);
+          font-size: 16px;
+          display: block
+      }
+    }
+
+    & .list-card-footer {
+        text-align: right;
+        margin-top: 30px;
+    }
+}
+</style>

@@ -7,6 +7,8 @@ return [
   'list resource' => 'List products',
   'create resource' => 'Create products',
   'edit resource' => 'Edit products',
+  'see resource'          => 'See productos',
+  'add resource'          => 'Add productos',
   'destroy resource' => 'Destroy products',
   'bulkload import' => 'Bulkload import',
   'title' => [

@@ -15,6 +15,8 @@
 
             <div class="col-lg-6 mb-5">
 
+              @include('icommerce::frontend.partials.show.button-add-list')
+
               @include('icommerce::frontend.partials.show.gallery')
 
               @include('icommerce::frontend.partials.show.share')

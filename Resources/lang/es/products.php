@@ -7,7 +7,9 @@ return [
     'list resource'         => 'Listar productos',
     'create resource'       => 'Crear productos',
     'edit resource'         => 'Editar productos',
-    'edit'         => 'Editar producto',
+    'see resource'          => 'Ver productos',
+    'add resource'          => 'Agregar productos',
+    'edit'                  => 'Editar producto',
     'destroy resource'      => 'Eliminar productos',
     'bulkload import' => 'Importación masiva',
     'title'             => [
